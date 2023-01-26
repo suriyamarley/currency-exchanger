@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Orbitron:wght@400;500;600&family=Rokkitt&family=Staatliches&display=swap');
+
+*,*::after,
+::before{
+  margin: 0%;
+  padding:0%;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+html{
+  font-size: 16px;
+
+}
+:root{
+  --clr-white:white;
+  --clr-black:black;
+  --amber-yellow: #ffbe0bff;
+--orange-pantone: #fb5607ff;
+--winter-pink: #ff006eff;
+--blue-violet: #8338ecff;
+--azure-blue: #3a86ffff;
+--clr-box-shadow: 0px 22px 12px rgba(0,0,0,0.15);
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+ 
+
+}
+/* global css */
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+a{
+text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.main-container{
+  border: 2px;
+  padding: 2rem;
+  background-image: url(../assets/photo-pig.avif);
+  height: auto;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+
+}
+
+.logo{
+  width: 100px;
+  border-radius: 70%;
+  border: 2px solid white;
+  
+}
+
+.title{
+  margin-top: -0.90rem;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-family: 'Staatliches', cursive;
+}
+
+.para{
+  font-size:0.70rem;
+  font-weight: 400;
+  color:blue;
+  margin-top: -1rem;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.inputs{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.inputs input{
+ border-radius: 2px;
+  border: none;
+  font-family: 'Rokkitt', serif;
+  font-size: 1rem;
+  font-weight: 500;
+
+}
+select{
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  background-color:lightcyan;
+  border: none;
+ 
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Rokkitt', serif;
+}
+.btn{
+  padding: 3px;
+  background-color:green;
+  border: none;
+  font-size: 1rem;
+  margin-left: 0.35rem;
+  font-family: 'Rokkitt', serif;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width:375px) {
+  .main-container{
+    width: 80%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .inputs{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
